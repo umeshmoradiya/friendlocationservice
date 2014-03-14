@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/list_image_bg"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/fs_list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <!-- Title Of Song -->
+
+    <TextView
+        android:id="@+id/fs_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Friends Tag Line -->
+
+    <TextView
+        android:id="@+id/fs_artist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fs_name"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..."
+        android:textColor="#343434"
+        android:textSize="10dip" />
+
+    <!-- Accept Button -->
+
+
+    <!-- Reject Button -->
+
+
+    <!-- Rightend Duration -->
+
+    <TextView
+        android:id="@+id/fs_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/fs_name"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="5:45"
+        android:textColor="#10bcc9"
+        android:textSize="10dip"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- online / offline status -->
+
+
+    <!-- online / offline status -->
+
+    <TextView
+        android:id="@+id/fs_id"
+        android:layout_width="2dip"
+        android:layout_height="2dip"
+        android:visibility="gone" />
+
+</RelativeLayout>

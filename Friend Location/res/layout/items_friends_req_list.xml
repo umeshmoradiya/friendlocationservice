@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/list_image_bg"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/fr_list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <!-- Title Of Song -->
+
+    <TextView
+        android:id="@+id/fr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Friends Tag Line -->
+
+    <TextView
+        android:id="@+id/fr_artist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fr_name"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..."
+        android:textColor="#343434"
+        android:textSize="10dip" />
+
+    <!-- Accept Button -->
+
+    <TextView
+        android:id="@+id/fr_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_below="@id/fr_artist"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Accept"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:visibility="invisible" />
+
+    <!-- Reject Button -->
+
+    <TextView
+        android:id="@+id/btnreject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_below="@id/fr_artist"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/fr_message"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Reject"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:visibility="invisible" />
+
+    <!-- Rightend Duration -->
+
+    <TextView
+        android:id="@+id/fr_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/fr_name"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="5:45"
+        android:textColor="#10bcc9"
+        android:textSize="10dip"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- online / offline status -->
+
+    <ImageView
+        android:id="@+id/fr_icon"
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/online" />
+
+    <!-- online / offline status -->
+
+    <CheckBox
+        android:id="@+id/fr_check"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/fr_id"
+        android:layout_width="2dip"
+        android:layout_height="2dip"
+        android:visibility="gone" />
+
+</RelativeLayout>

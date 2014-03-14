@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/no_friend" />
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/approved"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnclick"
+            android:text="Approve" />
+
+        <Button
+            android:id="@+id/rejected"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnclick"
+            android:text="Reject" />
+    </LinearLayout>
+
+</RelativeLayout>

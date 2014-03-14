@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/list_image_bg"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/fl_list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <!-- Title Of Song -->
+
+    <TextView
+        android:id="@+id/fl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Friends Tag Line -->
+
+    <TextView
+        android:id="@+id/fl_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_name"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..."
+        android:textColor="#343434"
+        android:textSize="10dip" />
+
+    <!-- Message -->
+
+    <TextView
+        android:id="@+id/fl_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_below="@id/fl_location"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:gravity="center_vertical"
+        android:text="Just gona stand there and ..."
+        android:textColor="#343434"
+        android:textSize="10dip" />
+
+    <!-- Rightend Duration -->
+
+    <TextView
+        android:id="@+id/fl_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/fl_name"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="5:45"
+        android:textColor="#10bcc9"
+        android:textSize="10dip"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!-- Rightend Arrow -->
+
+    <ImageView
+        android:id="@+id/fl_icon"
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/online" />
+
+    <TextView
+        android:id="@+id/fl_id"
+        android:layout_width="2dip"
+        android:layout_height="2dip"
+        android:visibility="gone" />
+
+</RelativeLayout>
